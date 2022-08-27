@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript Exercises</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Lottery Game</h1>
+    <h2>Pick 6 numbers between 1 and 59</h2>
+  </header>
+    <div>
+      <form id="lottoGuessForm">
+        <input type="number" class="lottoLineNumbers" value="ball1" name="ball1" max="59" min="1" required placeholder="_ _"></input>
+        <input type="number" class="lottoLineNumbers" value="ball2" name="ball2" max="59" min="1" required placeholder="_ _"></input>
+        <input type="number" class="lottoLineNumbers" value="ball3" name="ball3" max="59" min="1" required placeholder="_ _"></input>
+        <input type="number" class="lottoLineNumbers" value="ball4" name="ball4" max="59" min="1" required placeholder="_ _"></input>
+        <input type="number" class="lottoLineNumbers" value="ball5" name="ball5" max="59" min="1" required placeholder="_ _"></input>
+        <input type="number" class="lottoLineNumbers" value="ball6" name="ball6" max="59" min="1" required placeholder="_ _"></input>
+        <button id="submitBtn" value="submit">Submit</button>
+      </form>
+    </div>
+    <button id="pickBtn">Pick a ball</button>
+    <button id="reset">Reset</button>
+    <div id="resultsDiv">The results are: </div>
+  <footer>
+    <script src="script.js"></script>
+  </footer>
+</body>
+
+</html>

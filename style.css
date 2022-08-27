@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+}
+
+.lottoLineNumbers {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    border-color: white;
+    border-style: solid;
+    text-indent: 9px;
+    color: white;
+    text-indent: 2px;
+    font-size: 3.5em;
+    font-weight: 600;
+    background-color: transparent;
+    text-align: center;
+    transition: all 100ms ease-out;
+
+}
+
+#submitBtn {
+    margin-top: 20px;
+    grid-row: 2;
+    grid-column: 3/5;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+}
+
+h1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 4em;
+    color: white;
+    font-weight: 800;
+}
+
+h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    font-size: 1.5em;
+}
+
+#pickBtn {
+    margin: -25px 20px 20px 20px;
+    visibility: hidden;
+    cursor: pointer;
+    height: 40px;
+    width: 90px;
+}
+
+body {
+    background: rgb(2, 0, 36);
+    background-image: linear-gradient(180deg, rgba(2, 0, 36, 1) 0%, rgb(121, 37, 9) 35%, rgb(255, 81, 0) 100%);
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#resultsDiv {
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    visibility: hidden;
+    text-align: center;
+}
+
+#lottoGuessForm {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 83px 83px 83px 83px 83px 83px;
+    grid-template-rows: 90% 10%;
+    column-gap: 60px;
+    row-gap: 5px;
+    justify-items: center;
+
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+#reset{
+    display: none;
+    height: 40px;
+    width: 90px;
+    margin: -25px 20px 20px 20px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 862px) {
+    .lottoLineNumbers {
+        width: 80px;
+        height: 80px;
+        text-indent: 2px;
+        font-size: 2em;
+    }
+
+    #lottoGuessForm {
+        width: 80%;
+        display: grid;
+        grid-template-columns: 83px 83px 83px 83px 83px 83px;
+        grid-template-rows: 90% 10%;
+        column-gap: 5px;
+        row-gap: 5px;
+        justify-items: center;
+
+    }
+}
+
+@media only screen and (max-width: 530px) {
+  
+    body{
+      height: 100vh;
+  }
+  
+    h1{
+      text-align: center;
+  }
+    h2{
+      font-size: 1.2em;
+      text-align: center;
+  }
+    .lottoLineNumbers {
+        width: 55px;
+        height: 55px;
+        text-indent: 2px;
+        font-size: 1.5em;
+    }
+    #lottoGuessForm {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 70% 30%;
+        column-gap: 0.2em;
+        row-gap: 10px;
+        justify-items: center;
+    }
+    #submitBtn {
+        margin-top: 0px;
+        grid-row: 2;
+        grid-column: 3/5;
+    }
+    
+}
